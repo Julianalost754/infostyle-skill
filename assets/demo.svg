@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="520" fill="none">
+  <style>
+    .bg { fill: #1e1e2e; rx: 12; }
+    .header { fill: #cdd6f4; font-family: 'SF Mono', 'Fira Code', monospace; font-size: 13px; font-weight: 600; }
+    .prompt { fill: #89b4fa; font-family: 'SF Mono', 'Fira Code', monospace; font-size: 13px; }
+    .text { fill: #a6adc8; font-family: 'SF Mono', 'Fira Code', monospace; font-size: 12px; }
+    .label { fill: #585b70; font-family: 'SF Mono', 'Fira Code', monospace; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; }
+    .bad { fill: #f38ba8; font-family: 'SF Mono', 'Fira Code', monospace; font-size: 12px; }
+    .good { fill: #a6e3a1; font-family: 'SF Mono', 'Fira Code', monospace; font-size: 12px; }
+    .dim { fill: #6c7086; font-family: 'SF Mono', 'Fira Code', monospace; font-size: 12px; }
+    .score { fill: #f9e2af; font-family: 'SF Mono', 'Fira Code', monospace; font-size: 12px; }
+    .arrow { fill: #89b4fa; font-family: 'SF Mono', 'Fira Code', monospace; font-size: 18px; }
+    .divider { stroke: #313244; stroke-width: 1; }
+  </style>
+
+  <!-- Background -->
+  <rect class="bg" width="800" height="520"/>
+
+  <!-- Terminal dots -->
+  <circle cx="24" cy="18" r="6" fill="#f38ba8"/>
+  <circle cx="44" cy="18" r="6" fill="#f9e2af"/>
+  <circle cx="64" cy="18" r="6" fill="#a6e3a1"/>
+
+  <!-- Command -->
+  <text class="prompt" x="24" y="52">&gt; /infostyle</text>
+
+  <!-- Before section -->
+  <text class="label" x="24" y="82">Before</text>
+  <rect x="24" y="90" width="752" height="88" rx="8" fill="#313244"/>
+  <text class="bad" x="36" y="112">Уникальный AI-сервис нового поколения</text>
+  <text class="bad" x="36" y="130">Наша инновационная платформа использует передовые технологии</text>
+  <text class="bad" x="36" y="148">искусственного интеллекта для создания качественных презентаций</text>
+  <text class="bad" x="36" y="166">[Попробовать бесплатно]</text>
+
+  <!-- Score before -->
+  <text class="score" x="24" y="200">Ясность: 3  |  Конкретика: 2  |  Убедительность: 3  |  Голос: 4</text>
+
+  <!-- Arrow -->
+  <text class="arrow" x="380" y="230">&#8595;</text>
+
+  <!-- After section -->
+  <text class="label" x="24" y="258">After</text>
+  <rect x="24" y="266" width="752" height="88" rx="8" fill="#313244"/>
+  <text class="good" x="36" y="288">Презентация за 5 минут</text>
+  <text class="good" x="36" y="306">Загрузите тему -- получите готовые слайды с текстом и оформлением.</text>
+  <text class="good" x="36" y="324">15 000 студентов уже сдали работы.</text>
+  <text class="good" x="36" y="342">[Создать презентацию бесплатно]</text>
+
+  <!-- Score after -->
+  <text class="score" x="24" y="376">Ясность: 9  |  Конкретика: 8  |  Убедительность: 8  |  Голос: 9</text>
+
+  <!-- Divider -->
+  <line class="divider" x1="24" y1="394" x2="776" y2="394"/>
+
+  <!-- Changes -->
+  <text class="dim" x="24" y="418">Что изменилось:</text>
+  <text class="text" x="24" y="438">1. Заголовок: убран штамп, добавлено время (5 минут)</text>
+  <text class="text" x="24" y="458">2. Описание: вместо оценок -- конкретный результат (слайды с текстом)</text>
+  <text class="text" x="24" y="478">3. Социальное доказательство: 15 000 студентов</text>
+  <text class="text" x="24" y="498">4. CTA: конкретное действие вместо абстрактного</text>
+</svg>
